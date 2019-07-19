@@ -69,20 +69,18 @@ gestion_user::editar_usuarios($doc,$perfil,$nombre,$apellido,$ubicacion,$ext,$es
 </datalist>
 <input type="text" id="nombre" maxlength="30" name="nombre" value="<?php echo $nombre; ?>">	
 <input type="text" id="Apellido" maxlength="30" placeholder="Apellido"	name="apellido" value="<?php  echo $apellido; ?>">	
-<input type="text" id="Ubicacion" list="ubicacion" maxlength="30" placeholder="Ubicacion" name="ubicacion" value="<?php echo $ubicacion; ?>">			
-<datalist id="ubicacion">
-<option> San Bernardino </option>	
-<option> Guarenas </option>	
-<option> Guatire </option>	
-<option> La Mariposa </option>	
-<option> Tacoa </option>	
-</datalist>
+<select name="ubicacion" placeholder="Ubicacion" value="<?php echo $ubicacion;?>" >
+<option value="San bernardino">San bernardino</option>
+<option value="Guarenas">Guarenas</option>
+<option value="Guatire">Guatire</option>
+<option value="La mariposa">La mariposa</option>
+<option value="tacoa">Tacoa</option>
+</select>
 <input type="text" id="ext" maxlength="30" placeholder="Extencion telefonica" name="ext" value="<?php echo $ext; ?> " >	
-<input type="text" list="estatus" name="estatus" placeholder="Estatus" value=" <?php echo $estatus; ?>">
-<datalist id="estatus">
-<option> Activo </option>	
-<option> Desactivo </option>	
-</datalist>
+<select name="estatus" placeholder="Estatus" value=" <?php echo $estatus; ?>" >
+<option value="Activo">Activo</option>
+<option value="Desactivo">Desactivo</option>
+</select>
 <input type="password" id="password" maxlength="10" placeholder="Password"	name="password" value="<?php echo $password; ?>">	
 <input type="text" id="correo" maxlength="100" placeholder="Correo" name="correo" value="<?php echo $correo; ?>">
 <input type="text" id="idempleado" maxlength="30" placeholder="Codigo Empleado" name="idempleado" value="<?php echo $carnet; ?>">
