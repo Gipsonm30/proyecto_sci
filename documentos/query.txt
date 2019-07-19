@@ -1,0 +1,68 @@
+Query para solicitudes de usuarios 
+
+SELECT id_solic, sol.serial_material,mat.descripcion,id_usuario, unidad_sol, ext_sol, sol.cant, fecha_auto, fecha_entrega, fecha_solicitud, estatus, tipo
+FROM public.solicitudes sol, public.materiales mat
+where id_usuario='12833820'
+and
+sol.serial_material=mat.serial_material
+union
+SELECT id_solic, sol.serial_material,rep.descripcion,id_usuario, unidad_sol, ext_sol, sol.cant, fecha_auto, fecha_entrega, fecha_solicitud, estatus, tipo
+FROM public.solicitudes sol, public.repuestos rep
+where id_usuario='12833820'
+and
+sol.serial_material=rep.serial;
+
+
+
+SELECT id_solic, a.serial_material, b.descripcion,id_usuario, unidad_sol, ext_sol, a.cant, fecha_auto, fecha_entrega, fecha_solicitud, estatus, tipo
+FROM public.solicitudes a, public.materiales b
+where id_usuario='22905245'and
+a.serial_material=b.serial_material;
+
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'HP','Modelo1','laptop','equipo laptop1','2141512',52);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'HP','Modelo2','pc','equipo pc1','2141513',53);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'HP ','Modelo3','laptop','equipo laptop2','2141514',54);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'LENOVO','Modelo4','laptop','equipo laptop3','2141515',55);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo5','laptop','equipo laptop4','2141516',56);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo6','laptop','equipo laptop5','2141517',57);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo7','laptop','equipo laptop6','2141518',58);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo8','laptop','equipo laptop7','2141519',59);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo9','laptop','equipo laptop8','2141520',60);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo10','laptop','equipo laptop9','2141521',10);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo11','laptop','equipo laptop10','2141522',11);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo12','laptop','equipo laptop11','2141523',12);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo13','laptop','equipo laptop12','2141524',13);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo14','laptop','equipo laptop13','2141525',14);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo15','laptop','equipo laptop14','2141526',15);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo16','laptop','equipo laptop15','2141527',16);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo17','laptop','equipo laptop16','2141528',17);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo18','laptop','equipo laptop17','2141529',18);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo19','laptop','equipo laptop18','2141530',19);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo20','laptop','equipo laptop19','2141531',20);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo21','laptop','equipo laptop20','2141532',21);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo22','laptop','equipo laptop21','2141533',22);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo23','laptop','equipo laptop22','2141534',23);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo24','laptop','equipo laptop23','2141535',24);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo25','laptop','equipo laptop24','2141536',25);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo26','laptop','equipo laptop25','2141537',26);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo27','laptop','equipo laptop26','2141538',27);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo28','laptop','equipo laptop27','2141539',28);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo29','laptop','equipo laptop28','2141540',29);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo30','laptop','equipo laptop29','2141541',30);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo31','laptop','equipo laptop30','2141542',31);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo32','laptop','equipo laptop31','2141543',32);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo33','laptop','equipo laptop32','2141544',33);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo34','laptop','equipo laptop33','2141545',34);
+INSERT INTO public.equipo_inf( "ID_ALMACEN", marca, modelo, tipo, descripcion, cod_inventario, cant)VALUES (1,'VIT','Modelo35','laptop','equipo laptop34','2141546',35);
+
+SELECT id_solic, sol.serial_material,mat.descripcion,id_usuario, unidad_sol, ext_sol, sol.cant, fecha_auto, fecha_entrega, fecha_solicitud, estatus, tipo
+FROM public.solicitudes sol, public.materiales mat
+where id_usuario='12833820'
+and
+sol.serial_material=mat.serial_material
+union
+SELECT id_solic, sol.serial_material,rep.descripcion,id_usuario, unidad_sol, ext_sol, sol.cant, fecha_auto, fecha_entrega, fecha_solicitud, estatus, tipo
+FROM public.solicitudes sol, public.repuestos rep
+where id_usuario='12833820'
+and
+sol.serial_material=rep.serial;
