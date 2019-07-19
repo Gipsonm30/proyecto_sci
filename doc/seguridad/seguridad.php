@@ -52,6 +52,7 @@ die();
 </div>
 
 <!--fotter-->
+<!--Prueba github-->
 <?php require_once ("../hf/footer.php"); ?>
 </body>
 </html>
